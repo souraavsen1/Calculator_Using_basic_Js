@@ -1,0 +1,138 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:600,700"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./download.png" />
+
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="container">
+        <div class="screen">
+          <div class="output">
+            <p id="output"></p>
+          </div>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+          "
+        >
+          <div class="buttons">
+            <button
+              class="button"
+              style="background-color: rgb(100, 100, 100); color: white"
+              onclick="buttonFunc(id)"
+              id="←"
+            >
+              ←
+            </button>
+            <button
+              class="button"
+              id="C"
+              onclick="buttonFunc(id)"
+              style="background-color: rgb(100, 100, 100); color: white"
+            >
+              C
+            </button>
+            <button
+              class="button"
+              id="%"
+              onclick="buttonFunc(id)"
+              style="background-color: rgb(100, 100, 100); color: white"
+            >
+              %
+            </button>
+            <button
+              class="button"
+              id="/"
+              onclick="buttonFunc(id)"
+              style="background-color: rgb(100, 100, 100); color: white"
+            >
+              ÷
+            </button>
+            <button class="button" id="7" onclick="buttonFunc(id)">7</button>
+            <button class="button" id="8" onclick="buttonFunc(id)">8</button>
+            <button class="button" id="9" onclick="buttonFunc(id)">9</button>
+            <button
+              class="button"
+              id="*"
+              onclick="buttonFunc(id)"
+              style="background-color: rgb(100, 100, 100); color: white"
+            >
+              x
+            </button>
+            <button class="button" id="4" onclick="buttonFunc(id)">4</button>
+            <button class="button" id="5" onclick="buttonFunc(id)">5</button>
+            <button class="button" id="6" onclick="buttonFunc(id)">6</button>
+            <button
+              class="button"
+              id="-"
+              onclick="buttonFunc(id)"
+              style="background-color: rgb(100, 100, 100); color: white"
+            >
+              -
+            </button>
+            <button class="button" id="1" onclick="buttonFunc(id)">1</button>
+            <button class="button" id="2" onclick="buttonFunc(id)">2</button>
+            <button class="button" id="3" onclick="buttonFunc(id)">3</button>
+            <button
+              class="button"
+              id="+"
+              onclick="buttonFunc(id)"
+              style="background-color: rgb(100, 100, 100); color: white"
+            >
+              +
+            </button>
+            <button class="button" id="00" onclick="buttonFunc(id)">00</button>
+            <button class="button" id="0" onclick="buttonFunc(id)">0</button>
+            <button class="button" id="." onclick="buttonFunc(id)">.</button>
+            <button
+              class="button"
+              id="="
+              onclick="buttonFunc(id)"
+              style="background-color: rgb(100, 100, 100); color: white"
+            >
+              =
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="about">
+        <button class="about_i" onclick="abouti()">i</button>
+        <div
+          id="myself"
+          style="
+            background-color: rgba(255, 255, 255, 0.781);
+            color: black;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            margin-right: 40px;
+            border: 2px solid rgb(59, 59, 59);
+          "
+        >
+          <h4 style="text-align: center">Sourav Sen Gupta</h4>
+          <a
+            href="https://github.com/souraavsen1"
+            style="padding-bottom: 10px; text-align: center"
+            target="_blank"
+          >
+            gitHub
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
